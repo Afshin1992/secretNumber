@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="icon" href="monster.png" type="image/png" sizes="16x16">
+    <title>Secret Number</title>
+</head>
+
+<body>
+
+    <div class="alert alert-danger" id="failure" role="alert">
+        Ops! You may try next time, You'll be redirected to the first page in a few seconds.
+    </div>
+    <div class="alert alert-success" id="success" role="alert">
+        You win!
+    </div>
+    </span>
+    <div class="box effect2">
+        <div class="d-flex justify-content-center">
+            <img class="monster bounce-7" src="monster.png">
+            <div id="instruction">
+                <div class="d-flex justify-content-sm-start">
+                    <div id="coldark"></div>
+                    &nbsp;
+                    <p>There is a secret number between 0 - 9999 </p>
+                </div>
+                <div class="d-flex justify-content-sm-start">
+                    <div id="colblue"></div>
+                    &nbsp;
+                    <p>Secret number is greater than the number you entered</p> &nbsp; <img data-toggle="tooltip" title="e.g. If you entered 7 and the box become blue the secret number is 8 or 9" class="question" src="question.png">
+                </div>
+                <div class="d-flex justify-content-sm-start">
+                    <div id="colyellow"></div>
+                    &nbsp;
+                    <p>Secret number is less than the number you entered</p> &nbsp; <img data-toggle="tooltip" title="e.g. If you entered 2 and the box become yellow the secret number is 1 or 0" class="question" src="question.png">
+                </div>
+                <div class="d-flex justify-content-sm-start">
+                    <div id="colgreen"></div>
+                    &nbsp;
+                    <p>Good job! This number is correct</p> <img data-toggle="tooltip" title="Green means you guessed the secret number correctly" class="question" src="question.png">
+                </div>
+            </div>
+
+            <form class="form-inline">
+                <div class="card" id="textBox">
+                    <p id="texts">If you dare to play with<br>me, enter your name below.<br>HaHaHa...</p>
+                </div>
+                <label class="sr-only" for="inlineFormInput">Name</label>
+                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="textinput" placeholder="John Doe">
+
+                <button type="button" class="btn btn-outline-info" id="enterBtn">Enter</button>
+
+            </form>
+
+
+            <div id="showhide">
+                <div class="game"></div>
+                <div id="flexItems">
+                    <div id="hideprogress">
+                        <div class="progress" style="height: 37px;">
+                            <div id="bar" class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" aria-valuenow="0l" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <button class="btn btn-info" id="by10" type="button">Start</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
